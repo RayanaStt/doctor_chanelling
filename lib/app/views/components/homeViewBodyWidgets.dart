@@ -142,7 +142,7 @@ class homeViewBodyWidgets extends StatelessWidget {
           height: 15,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 10),
+          padding: const EdgeInsets.only(left: 5, right: 20),
           child: Text('Categories',
               style: GoogleFonts.rubik(
                 textStyle: TextStyle(
@@ -165,8 +165,12 @@ class homeViewBodyWidgets extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Column(children: [
                       InkWell(
-                        onTap:() {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  Dentists(),));
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Dentists(),
+                              ));
                         },
                         child: Container(
                           margin:
@@ -189,7 +193,7 @@ class homeViewBodyWidgets extends StatelessWidget {
                   })),
         ),
         SizedBox(
-          height: 10,
+          height: 5,
         ),
         Padding(
           padding: const EdgeInsets.only(left: 10),
@@ -216,7 +220,11 @@ class homeViewBodyWidgets extends StatelessWidget {
                   return Align(
                     child: InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  DoctorProfileView(),));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => DoctorProfileView(),
+                            ));
                       },
                       child: Container(
                         margin: EdgeInsets.symmetric(horizontal: 10),
@@ -258,7 +266,8 @@ class homeViewBodyWidgets extends StatelessWidget {
                                   catNames[index].toString(),
                                   style: TextStyle(
                                       fontSize: 12,
-                                      color: Color.fromRGBO(103, 114, 148, 0.80),
+                                      color:
+                                          Color.fromRGBO(103, 114, 148, 0.80),
                                       fontFamily: 'Rubik',
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -273,7 +282,8 @@ class homeViewBodyWidgets extends StatelessWidget {
                                       height: 28,
                                       child: Center(child: Text('Book')),
                                       decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                           color: blueColor),
                                     ),
                                     SizedBox(

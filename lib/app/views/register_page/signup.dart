@@ -1,4 +1,3 @@
-
 import 'package:doctor_chanelling/app/views/components/comtainers/cont.dart';
 import 'package:doctor_chanelling/app/views/components/constants/constants.dart';
 import 'package:doctor_chanelling/app/views/components/text_fields/textFields.dart';
@@ -24,10 +23,10 @@ class SignUpPage extends StatelessWidget {
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 80,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(20),
               child: Column(
                 children: <Widget>[
@@ -48,12 +47,12 @@ class SignUpPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Expanded(
                 child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(60),
@@ -61,14 +60,14 @@ class SignUpPage extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 child: Column(
                   children: <Widget>[
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     Container(
-                      padding: EdgeInsets.all(30),
+                      padding: const EdgeInsets.all(30),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
@@ -76,13 +75,13 @@ class SignUpPage extends StatelessWidget {
                             BoxShadow(
                               color: blueColor,
                               blurRadius: 20,
-                              offset: Offset(0, 10),
+                              offset: const Offset(0, 10),
                             ),
                           ]),
                       child: Column(
                         children: <Widget>[
                           Container(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
@@ -90,12 +89,12 @@ class SignUpPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            child: TextFields(
+                            child: const TextFields(
                               hintText: 'Name',
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
@@ -103,12 +102,12 @@ class SignUpPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            child: TextFields(
+                            child: const TextFields(
                               hintText: 'Email',
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
@@ -116,14 +115,14 @@ class SignUpPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            child: TextFields(
+                            child: const TextFields(
                               hintText: 'Password',
                             ),
                           )
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     InkWell(
@@ -131,7 +130,7 @@ class SignUpPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => SignUpPage()));
+                                builder: (context) => const SignUpPage()));
                       },
                       child: Text(
                         "You already have an account, Login ",
@@ -140,7 +139,7 @@ class SignUpPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     InkWell(
@@ -148,27 +147,21 @@ class SignUpPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomePage()));
+                                builder: (context) => const HomePage()));
                       },
-                      child: Cont(
+                      child: const Cont(
                         text: 'Sign Up',
                       ),
                     ),
-                    SizedBox(
-                      height: 30,
+                    const SizedBox(
+                      height: 10,
                     ),
-                    Text(
+                    const Text(
                       " Continue with social media ",
                       style: TextStyle(
                         color: Colors.grey,
                       ),
                     ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Row(
-                      children: <Widget>[],
-                    )
                   ],
                 ),
               ),

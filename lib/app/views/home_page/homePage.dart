@@ -1,5 +1,6 @@
 import 'package:doctor_chanelling/app/views/components/doctorsCantainer/docsContainer.dart';
 import 'package:doctor_chanelling/app/views/components/homeViewBodyWidgets.dart';
+import 'package:doctor_chanelling/app/views/notifications/notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -33,13 +34,19 @@ class HomePage extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsets.only(left: 150, top: 50),
-                  child: Container(
-                      height: 60,
-                      width: 60,
-                      child: Icon(
-                        Icons.notifications,
-                        size: 32,
-                      )),
+                  child: InkWell(
+                    onTap: () {
+                      
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Notifications(),));
+                    },
+                    child: Container(
+                        height: 60,
+                        width: 60,
+                        child: Icon(
+                          Icons.notifications,
+                          size: 32,
+                        )),
+                  ),
                 ),
               ],
             ),

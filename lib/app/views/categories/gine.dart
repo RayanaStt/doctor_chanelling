@@ -6,23 +6,25 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/material_symbols.dart';
 
-class Dentists extends StatelessWidget {
+class  Gynecologist extends StatelessWidget {
   List stars = [
-    "5 years expierence",
+   
     "2 years expierence",
-    "4 years expierence",
+     "5 years expierence",
     "5 years expierence",
     "3 years expierence",
+    "4 years expierence",
   ];
   List docNAmes = [
     "Dr.Fillerup",
+      "Dr. Pill",
     "Dr.Astan",
-    "Dr. Pill",
+  
     "Dr.Aisha",
     "Dr. Fill",
   ];
 
-  Dentists({Key? key}) : super(key: key);
+  Gynecologist({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +52,7 @@ class Dentists extends StatelessWidget {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, top: 10),
-                      child: Text("Dentists",
+                      child: Text("Gynecologist",
                           style: GoogleFonts.averiaSansLibre(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -91,13 +93,13 @@ class Dentists extends StatelessWidget {
                   child: ListView.builder(
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
-                    itemCount: 5,
+                    itemCount: 3,
                     itemBuilder: (context, index) {
                       return container(
                         textx: docNAmes[index],
                         tt: stars[index],
                         child: Image.asset(
-                          'assets/images/doctor${index + 1}.jpg',
+                          'assets/images/doc${index + 1}.jpg',
                           fit: BoxFit.cover,
                         ),
                       );
@@ -161,7 +163,7 @@ class container extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'dentist',
+                            'Gynecologist',
                             style: GoogleFonts.averiaSansLibre(
                                 color: blueColor,
                                 fontSize: 20,

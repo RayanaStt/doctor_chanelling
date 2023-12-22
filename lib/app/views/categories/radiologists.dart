@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/material_symbols.dart';
 
-class Dentists extends StatelessWidget {
+class Radiologists extends StatelessWidget {
   List stars = [
     "5 years expierence",
     "2 years expierence",
@@ -22,7 +22,7 @@ class Dentists extends StatelessWidget {
     "Dr. Fill",
   ];
 
-  Dentists({Key? key}) : super(key: key);
+   Radiologists({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class Dentists extends StatelessWidget {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, top: 10),
-                      child: Text("Dentists",
+                      child: Text("Radiologists",
                           style: GoogleFonts.averiaSansLibre(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -161,7 +161,7 @@ class container extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'dentist',
+                            'radiologists',
                             style: GoogleFonts.averiaSansLibre(
                                 color: blueColor,
                                 fontSize: 20,

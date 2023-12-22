@@ -1,5 +1,11 @@
 
 import 'package:doctor_chanelling/app/views/categories/dentists/dentists.dart';
+import 'package:doctor_chanelling/app/views/categories/gine.dart';
+import 'package:doctor_chanelling/app/views/categories/nevro.dart';
+import 'package:doctor_chanelling/app/views/categories/og.dart';
+import 'package:doctor_chanelling/app/views/categories/psyhiatrists.dart';
+import 'package:doctor_chanelling/app/views/categories/radiologists.dart';
+import 'package:doctor_chanelling/app/views/categories/urologists.dart';
 
 import 'package:doctor_chanelling/app/views/components/constants/constants.dart';
 import 'package:flutter/material.dart';
@@ -110,6 +116,15 @@ class Categories extends StatelessWidget {
       color: blueColor,
     ),
   ];
+  List pages = [
+    Dentists(),
+    Gynecologist(),
+    Urologists(),
+    Neutologists(),
+    Psyhiatrists(),
+    Allergists(),
+    Radiologists()
+  ];
   Categories({super.key});
 
   @override
@@ -125,7 +140,7 @@ class Categories extends StatelessWidget {
                 return Column(children: [
                   InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>Dentists() ,));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => pages[index] ,));
                     },
                     child: Container(
                       margin: EdgeInsets.symmetric(vertical: 8, horizontal: 15),

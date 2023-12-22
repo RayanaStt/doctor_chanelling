@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/material_symbols.dart';
 
-class Dentists extends StatelessWidget {
+class Allergists extends StatelessWidget {
   List stars = [
     "5 years expierence",
     "2 years expierence",
@@ -22,7 +22,7 @@ class Dentists extends StatelessWidget {
     "Dr. Fill",
   ];
 
-  Dentists({Key? key}) : super(key: key);
+  Allergists({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class Dentists extends StatelessWidget {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, top: 10),
-                      child: Text("Dentists",
+                      child: Text("Allergists",
                           style: GoogleFonts.averiaSansLibre(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -91,13 +91,13 @@ class Dentists extends StatelessWidget {
                   child: ListView.builder(
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
-                    itemCount: 5,
+                    itemCount: 1,
                     itemBuilder: (context, index) {
                       return container(
                         textx: docNAmes[index],
                         tt: stars[index],
                         child: Image.asset(
-                          'assets/images/doctor${index + 1}.jpg',
+                          'assets/images/doctor2.jpg',
                           fit: BoxFit.cover,
                         ),
                       );
@@ -161,7 +161,7 @@ class container extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'dentist',
+                            'allergists',
                             style: GoogleFonts.averiaSansLibre(
                                 color: blueColor,
                                 fontSize: 20,
